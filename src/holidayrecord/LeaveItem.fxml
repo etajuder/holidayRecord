@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<fx:root prefHeight="50.0" prefWidth="522.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+    <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="522.0">
+        <children>
+            <Label fx:id="fullName" layoutX="124.0" layoutY="18.0" text="Etanuwoma Jude" />
+            <Label fx:id="goingDate" layoutX="248.0" layoutY="19.0" text="12-13-2016" />
+            <Label fx:id="comingDate" layoutX="339.0" layoutY="19.0" text="12-13-2016" />
+            <Label fx:id="empId" layoutX="21.0" layoutY="18.0" text="4903940343" />
+            <Button fx:id="reason" layoutX="430.0" layoutY="12.0" mnemonicParsing="false" onAction="#getReasonAction" style="-fx-background-color: #4aaee7; -fx-text-fill: #fff;" text="Reason" />
+        </children>
+    </Pane>
+</fx:root>

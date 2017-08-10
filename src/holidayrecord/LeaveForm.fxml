@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="holidayrecord.LeaveFormController">
+    <stylesheets>
+        <URL value="@leaveform.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="-3.0" prefHeight="672.0" prefWidth="723.0">
+         <children>
+            <Pane prefHeight="76.0" prefWidth="723.0" style="-fx-background-color: #4aaee7;">
+               <children>
+                  <Label layoutX="14.0" layoutY="19.0" text="Leave Form" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="45.0" style="-fx-font-weight: 500;" text="Leave safe" textFill="#f2ecec" />
+                  <Button fx:id="exitButton" layoutX="650.0" layoutY="28.0" mnemonicParsing="false" onAction="#extButtonAction" style="-fx-background-color: #fff;" text="EXIT" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="HOME" layoutX="603.0" layoutY="52.0" onMouseClicked="#goHome" size="29" />
+               </children>
+            </Pane>
+            <Pane layoutX="64.0" layoutY="137.0" prefHeight="521.0" prefWidth="595.0" style="-fx-background-color: #fff; -fx-border-color: #dfe8f1; -fx-border-radius: 4;">
+               <children>
+                  <Pane layoutX="129.0" layoutY="26.0" prefHeight="38.0" prefWidth="43.0" style="-fx-border-color: #c2c2c2; -fx-background-color: #fff; -fx-border-radius: 5;">
+                     <children>
+                        <FontAwesomeIconView glyphName="USER" layoutX="9.0" layoutY="24.0" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="30.0" layoutY="40.0" text="FULL NAME">
+                     <font>
+                        <Font name="Arial Black" size="10.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="129.0" layoutY="100.0" prefHeight="38.0" prefWidth="43.0" style="-fx-border-color: #c2c2c2; -fx-background-color: #fff; -fx-border-radius: 5;">
+                     <children>
+                        <FontAwesomeIconView glyphName="KEY" layoutX="9.0" layoutY="24.0" />
+                     </children>
+                  </Pane>
+                  <TextField fx:id="fullName" layoutX="158.0" layoutY="26.0" prefHeight="38.0" prefWidth="376.0" promptText="FULL NAME" style="-fx-background-color: #fff; -fx-border-color: #c2c2c2; -fx-border-radius: 3;" />
+                  <Label layoutX="25.0" layoutY="109.0" prefHeight="20.0" prefWidth="84.0" text="EMPLOYEE ID">
+                     <font>
+                        <Font name="Arial Black" size="10.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="1.0" layoutY="78.0" opacity="0.51" prefHeight="6.0" prefWidth="595.0" />
+                  <TextField fx:id="empId" layoutX="160.0" layoutY="100.0" prefHeight="38.0" prefWidth="376.0" promptText="EMPLOYEE ID" style="-fx-background-color: #fff; -fx-border-color: #c2c2c2; -fx-border-radius: 3;" />
+                  <Separator layoutX="1.0" layoutY="156.0" opacity="0.51" prefHeight="6.0" prefWidth="595.0" />
+                  <Pane layoutX="129.0" layoutY="187.0" prefHeight="38.0" prefWidth="43.0" style="-fx-border-color: #c2c2c2; -fx-background-color: #fff; -fx-border-radius: 5;">
+                     <children>
+                        <FontAwesomeIconView glyphName="CALENDAR" layoutX="9.0" layoutY="24.0" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="16.0" layoutY="196.0" prefHeight="20.0" prefWidth="98.0" text="PROPOSED DATE">
+                     <font>
+                        <Font name="Arial Black" size="10.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutY="250.0" opacity="0.51" prefHeight="6.0" prefWidth="595.0" />
+                  <DatePicker fx:id="goingDate" layoutX="161.0" layoutY="187.0" prefHeight="38.0" prefWidth="376.0" promptText="DATE GOING" style="-fx-background-color: #fff; -fx-border-color: #c2c2c2;" />
+                  <Pane layoutX="130.0" layoutY="273.0" prefHeight="38.0" prefWidth="43.0" style="-fx-border-color: #c2c2c2; -fx-background-color: #fff; -fx-border-radius: 5;">
+                     <children>
+                        <FontAwesomeIconView glyphName="CALENDAR" layoutX="9.0" layoutY="24.0" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="25.0" layoutY="282.0" prefHeight="20.0" prefWidth="84.0" text="RETURN DATE">
+                     <font>
+                        <Font name="Arial Black" size="10.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="1.0" layoutY="336.0" opacity="0.51" prefHeight="6.0" prefWidth="595.0" />
+                  <DatePicker fx:id="comingDate" layoutX="162.0" layoutY="273.0" prefHeight="38.0" prefWidth="376.0" promptText="RETURN DATE" style="-fx-background-color: #fff; -fx-border-color: #c2c2c2;" />
+                  <TextArea fx:id="reason" layoutX="160.0" layoutY="348.0" prefHeight="107.0" prefWidth="376.0" />
+                  <Label layoutX="45.0" layoutY="363.0" prefHeight="20.0" prefWidth="64.0" text="REASON">
+                     <font>
+                        <Font name="Arial Black" size="10.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="formSubmit" layoutX="162.0" layoutY="469.0" mnemonicParsing="false" onAction="#submitButtonAction" prefHeight="38.0" prefWidth="368.0" style="-fx-background-color: #4aaee7;" text="Button" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Label layoutX="58.0" layoutY="96.0" style="-fx-text-fill: #414C59;" text="FILL ALL INPUTS">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorCode" layoutX="238.0" layoutY="101.0" textFill="#b52525" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

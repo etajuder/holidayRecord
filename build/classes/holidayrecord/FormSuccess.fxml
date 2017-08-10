@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="holidayrecord.FormSuccessController">
+   <children>
+      <Pane layoutY="1.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff; -fx-border-color: #2c2c2c;">
+         <children>
+            <FontAwesomeIconView fill="#4aaee7" glyphName="CHECK" layoutX="249.0" layoutY="185.0" size="122.0" />
+            <Circle fill="#1f93ff00" layoutX="310.0" layoutY="139.0" radius="100.0" stroke="#4aaee7" strokeType="INSIDE" />
+            <Label layoutX="109.0" layoutY="263.0" text="Your request have been submitted" textFill="#574b4b">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="exitButton" layoutX="266.0" layoutY="314.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="46.0" prefWidth="89.0" style="-fx-background-color: #4aaee7; -fx-text-fill: #fff; -fx-font-size: 16;" text="OK" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
